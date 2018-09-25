@@ -1,13 +1,13 @@
 <launch>
-    <group ns="blue">
+    <group ns="yellow">
         <arg name="legacy_packets" default="false" />
-        <arg name="output_device" default="/dev/serial/by-id/usb-STMicroelectronics_Basestation_080-if00" />
+        <arg name="output_device" default="/dev/serial/by-id/usb-STMicroelectronics_Basestation_078-if00" />
 
         <param name="use_legacy_packets" type="boolean" value="$(arg legacy_packets)" />
         <param name="output_device" type="string" value="$(arg output_device)" />
 
-        <param name="our_side" type="str" value="left" />
-        <param name="our_color" type="str" value="blue" />
+        <param name="our_side" type="str" value="right" />
+        <param name="our_color" type="str" value="yellowblue" />
 
         <param name="robot0/robotType" type="str" value="proto" />
         <param name="robot1/robotType" type="str" value="proto" />
